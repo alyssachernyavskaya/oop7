@@ -1,0 +1,14 @@
+add_executable(1_13_Tests test.cpp)
+
+target_include_directories(1_13_Tests PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/../src
+)
+
+target_link_libraries(1_13_Tests PRIVATE
+    gtest
+    gmock
+    gtest_main
+)
+
+include(GoogleTest)
+gtest_discover_tests(1_13_Tests)
