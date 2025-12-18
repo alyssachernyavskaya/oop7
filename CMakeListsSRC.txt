@@ -1,4 +1,5 @@
-add_executable(1_13 main.cpp Dragon.cpp Druid.cpp Elf.cpp Factory.cpp NPC.cpp Visitor.cpp
-Elf.h Dragon.h Druid.h Factory.h NPC.h Visitor.h)
+add_executable(1_13 lr7.cpp Knight.cpp Elf.cpp Factory.cpp NPC.cpp Visitor.cpp Robber.cpp Observer.cpp
+Elf.h Knight.h Robber.h Factory.h NPC.h Visitor.h Observer.h)
+
 
 target_include_directories(1_13 PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
